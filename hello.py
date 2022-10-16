@@ -4,9 +4,6 @@ import pandas as pd
 import random
 
 
-print("hello")
-
-
 ronQuotes=[
 'There is only one bad word: taxes.',
 'Theres more than one crib tree in a forest. Thats not a lesson, by the way, just a comment on lumber availability.',
