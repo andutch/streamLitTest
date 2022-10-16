@@ -3,11 +3,9 @@ import streamlit as st
 import pandas as pd
 import random
 
+
 print("hello")
 
-
-
-#st.write("""#simple stockapp""")
 
 ronQuotes=[
 'There is only one bad word: taxes.',
@@ -34,8 +32,17 @@ ronQuotes=[
 ]
 
 print(random.choice(ronQuotes))
-st.image("https://en.wikipedia.org/wiki/Ron_Swanson#/media/File:RonSwanson.jpg")
 
-st.write(random.choice(ronQuotes))
+import streamlit as st
 
-st.image("https://en.wikipedia.org/wiki/Ron_Swanson#/media/File:RonSwanson.jpg")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write(' ')
+
+with col2:
+    st.image("https://upload.wikimedia.org/wikipedia/en/a/ae/RonSwanson.jpg")
+    st.write(random.choice(ronQuotes))
+
+with col3:
+    st.write('')
